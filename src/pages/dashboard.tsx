@@ -21,8 +21,8 @@ import udst from "public/usdt.png";
 import paypal from "public/paypal.png";
 import etherum from "public/etherum.png";
 import bitcoinAddress from "public/btc-address.png";
-import etherumAddress from "public/ethereum-address.png";
-import usdtEthAddress from "public/usdt-eth-address.png";
+// import etherumAddress from "public/ethereum-address.png";
+// import usdtEthAddress from "public/usdt-eth-address.png";
 
 function Dashboard(): JSX.Element {
   const [token, setToken] = useState<string>("");
@@ -598,7 +598,7 @@ function Dashboard(): JSX.Element {
                             ) : paymentModal.toLowerCase() === "ethereum" ? (
                               <div>
                                 <Image
-                                  src={etherumAddress}
+                                  src="https://res.cloudinary.com/dvzdavdtc/image/upload/v1735485368/ethereum-address_gs6tuc.png"
                                   width={250}
                                   height={200}
                                   alt=""
@@ -609,7 +609,7 @@ function Dashboard(): JSX.Element {
                                 .startsWith("usdt") ? (
                               <div>
                                 <Image
-                                  src={usdtEthAddress}
+                                  src="https://res.cloudinary.com/dvzdavdtc/image/upload/v1735485368/usdt-eth-address_ybzdxo.png"
                                   width={250}
                                   height={200}
                                   alt=""
@@ -1044,7 +1044,7 @@ function Dashboard(): JSX.Element {
                             ) : paymentModal.toLowerCase() === "ethereum" ? (
                               <div>
                                 <Image
-                                  src={etherumAddress}
+                                  src="https://res.cloudinary.com/dvzdavdtc/image/upload/v1735485368/ethereum-address_gs6tuc.png"
                                   width={250}
                                   height={200}
                                   alt=""
@@ -1055,7 +1055,7 @@ function Dashboard(): JSX.Element {
                                 .startsWith("usdt") ? (
                               <div>
                                 <Image
-                                  src={usdtEthAddress}
+                                  src="https://res.cloudinary.com/dvzdavdtc/image/upload/v1735485368/usdt-eth-address_ybzdxo.png"
                                   width={250}
                                   height={200}
                                   alt=""
