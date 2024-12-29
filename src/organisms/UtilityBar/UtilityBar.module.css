@@ -1,0 +1,3 @@
+.utilityBarContainer {
+  @apply w-full  pr-4 border-b;
+}

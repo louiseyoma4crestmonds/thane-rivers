@@ -1,0 +1,18 @@
+.btn {
+  @apply inline-flex items-center px-6 py-4 rounded-lg font-medium ease-in-out duration-300;
+}
+
+/* Button Widths */
+.btnFull {
+  @apply w-full;
+}
+
+/* Button Varients */
+.btnPrimary {
+  @apply bg-maroon100 text-white;
+}
+
+/* Button Varients */
+.btnSecondary {
+  @apply bg-backgroundCream text-maroon100 border border-maroon100 rounded;
+}
