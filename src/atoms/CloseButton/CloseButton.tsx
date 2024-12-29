@@ -1,6 +1,8 @@
 import styles from "./Closebutton.module.css";
 import { CloseButtonProps } from "./CloseButton.types";
 
+// comment
+
 function CloseButton(props: CloseButtonProps) {
   const { onclick } = props;
 
