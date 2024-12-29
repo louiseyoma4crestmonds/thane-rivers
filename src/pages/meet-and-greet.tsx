@@ -50,7 +50,7 @@ function MeetAndGreet(): JSX.Element {
           <div
             className="phone:h-[250px] h-full w-12/12 text-white"
             style={{
-              backgroundImage: `url('/meet-and-greet-banner.png')`,
+              backgroundImage: `url('https://res.cloudinary.com/dvzdavdtc/image/upload/v1734218898/meet-and-greet-banner_cq4mth.png')`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               backgroundPosition: "center",

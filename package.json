@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 9191",
+    "start": "next start -p 9292",
     "lint": "next lint",
     "prepare": "husky install",
     "check-types": "tsc --pretty --noEmit",

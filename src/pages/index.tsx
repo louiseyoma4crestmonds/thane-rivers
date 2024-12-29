@@ -71,7 +71,7 @@ function Home(): JSX.Element {
         <div
           className="phone:h-[250px] w-full  opacity-80 phone:hidden"
           style={{
-            backgroundImage: `url('/odin-art-thanerivers.png')`,
+            backgroundImage: `url('https://res.cloudinary.com/dvzdavdtc/image/upload/v1735478546/odin-art-thanerivers_o7hqtx.png')`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "",
@@ -145,7 +145,7 @@ function Home(): JSX.Element {
                 <div
                   className="tablet:hidden laptop:hidden desktop:hidden plasma:hidden "
                   style={{
-                    backgroundImage: `url(http://${celebrity.photo})`,
+                    backgroundImage: `url(${celebrity.photo})`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     backgroundPositionX: "",
