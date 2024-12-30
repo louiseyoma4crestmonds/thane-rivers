@@ -66,7 +66,7 @@ function Celebrity(): JSX.Element {
           </div>
         </ZoomInDiv>
 
-        <div className="w-full space-y-8 bg-backgroundCream text-maroon100 py-8 px-32 ">
+        <div className="w-full space-y-8 bg-backgroundCream text-maroon100 py-8 px-32 phone:px-4 ">
           <div className="w-full flex place-content-center">
             <div
               className="rounded-full w-full "

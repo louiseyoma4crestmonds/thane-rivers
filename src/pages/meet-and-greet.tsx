@@ -57,9 +57,9 @@ function MeetAndGreet(): JSX.Element {
               height: "400px",
             }}
           />
-          <div className="px-12 bg-backgroundCream px-8 pnone:px-4 text-black space-y-4 py-16 shadow-md ">
+          <div className="px-12 bg-backgroundCream phone:px-4 text-black space-y-4 py-16 shadow-md leading-loose">
             <div className="text-base">
-              <div>
+              <div className="leading-loose">
                 We are thrilled to offer you a once-in-a-lifetime opportunity to
                 meet the legendary Thane Rivers in person! Whether you are a
                 lifelong fan or a recent admirer, this exclusive meet and greet
