@@ -35,7 +35,8 @@ function Footer(): JSX.Element {
         </div>
       </div>
       <div className="w-full text-center text-[#acaaac] pb-6">
-        Copyright © celebrity-appointment 2024. All Rights Reserved
+        Copyright © celebrity-appointment 2024.
+        <br /> All Rights Reserved
       </div>
     </div>
   );

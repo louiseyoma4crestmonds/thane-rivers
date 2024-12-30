@@ -71,7 +71,7 @@ function Register(): JSX.Element {
         </div>
         {/* END OF UTILITY BAR */}
 
-        <div className="w-full text-backgroundCream text-2xl bg-maroon100 text-center py-4 uppercase">
+        <div className="w-full text-backgroundCream text-lg bg-maroon100 text-center py-4 uppercase">
           CREATE A FREE ACCOUNT
         </div>
         <div className="w-full flex place-content-center bg-backgroundCream100 py-16 phone:px-6 shadow-md drop-shadow-2xl">

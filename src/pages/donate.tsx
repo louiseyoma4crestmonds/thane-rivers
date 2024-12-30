@@ -35,7 +35,7 @@ function Donate(): JSX.Element {
   }
 
   return (
-    <div className="bg-backgroundCream text-maroon100">
+    <div className="bg-backgroundCream text-maroon100 text-sm">
       <div>
         {/* UTILITY BAR */}
         <div>
@@ -44,13 +44,13 @@ function Donate(): JSX.Element {
         {/* END OF UTILITY BAR */}
 
         <div>
-          <div className="w-full text-white text-xl uppercase  bg-maroon100 text-center py-4 ">
+          <div className="w-full text-white text-lg uppercase  bg-maroon100 text-center py-4 ">
             <SlideInLeftDiv>DONATIONS</SlideInLeftDiv>
           </div>
         </div>
 
-        <div className="w-full px-6 tablet:px-28 space-y-4 pt-4">
-          <div className="w-full space-y-4 py-8 border-b border-b-maroon100">
+        <div className="w-full px-4 space-y-4 pt-4">
+          <div className="w-full space-y-4 py-8 shadow-lg px-4">
             <div className="font-bold text-maroon100 text-lg uppercase">
               Help Rebuild Lives in Ukraine.
             </div>
@@ -64,7 +64,7 @@ function Donate(): JSX.Element {
                 height: "400px",
               }}
             />
-            <div className="text-justify">
+            <div className="leading-loose">
               Millions in Ukraine have been forced to leave their homes,
               carrying only hope and courage amidst unimaginable loss. These 3.7
               million displaced individuals—families, children, and
@@ -75,7 +75,7 @@ function Donate(): JSX.Element {
               Together, we can bring light to their darkest hour.
             </div>
           </div>
-          <div className=" w-full space-y-4 py-8 border-b border-b-maroon100">
+          <div className="w-full space-y-4 py-8 shadow-lg px-4">
             <div className="font-bold text-maroon100 text-lg uppercase">
               Support Gaza: Restore Hope Amidst the Devastation
             </div>
@@ -89,7 +89,7 @@ function Donate(): JSX.Element {
                 height: "400px",
               }}
             />
-            <div className="text-justify">
+            <div className="leading-loose">
               Thousands of families in Gaza are struggling to survive amidst the
               devastation of war. Homes have been destroyed, lives shattered,
               and children left without safety or security. Your generosity can
@@ -101,7 +101,7 @@ function Donate(): JSX.Element {
             </div>
           </div>
 
-          <div className=" w-full space-y-4 py-8 border-b border-b-maroon100">
+          <div className="w-full space-y-4 py-8 shadow-lg px-4">
             <div className="font-bold text-maroon100 text-lg uppercase">
               Bring Clean Water to Africa’s Children
             </div>
@@ -116,7 +116,7 @@ function Donate(): JSX.Element {
               }}
             />
 
-            <div className="text-justify">
+            <div className="leading-loose">
               Millions of children across Africa wake up each day without access
               to clean, safe water. They walk miles under the scorching sun,
               risking their health for something we often take for granted. Your

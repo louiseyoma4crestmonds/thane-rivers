@@ -43,12 +43,12 @@ function MeetAndGreet(): JSX.Element {
         </div>
         {/* END OF UTILITY BAR */}
 
-        <div className="w-full text-white text-2xl bg-maroon100 text-center py-4 uppercase">
+        <div className="w-full text-white text-lg bg-maroon100 text-center py-4 uppercase">
           Meet and Greet
         </div>
         <div className="bg-gray100">
           <div
-            className="phone:h-[250px] h-full w-12/12 text-white"
+            className="phone:h-[250px] h-full w-12/12 text-white border border-maroon100"
             style={{
               backgroundImage: `url('https://res.cloudinary.com/dvzdavdtc/image/upload/v1734218898/meet-and-greet-banner_cq4mth.png')`,
               backgroundRepeat: "no-repeat",
@@ -57,7 +57,7 @@ function MeetAndGreet(): JSX.Element {
               height: "400px",
             }}
           />
-          <div className="px-4 bg-backgroundCream px-8 pnone:px-4 text-black space-y-4 py-16 shadow-md ">
+          <div className="px-12 bg-backgroundCream px-8 pnone:px-4 text-black space-y-4 py-16 shadow-md ">
             <div className="text-base">
               <div>
                 We are thrilled to offer you a once-in-a-lifetime opportunity to

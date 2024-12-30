@@ -62,11 +62,11 @@ function SignIn(): JSX.Element {
         </div>
         {/* END OF UTILITY BAR */}
 
-        <div className="w-full text-white text-2xl bg-maroon100 text-center py-4 uppercase">
+        <div className="w-full text-white text-lg bg-maroon100 text-center py-4 uppercase">
           Sign In
         </div>
         <div className="w-full flex place-content-center bg-backgroundCream100 py-16 phone:px-6 shadow-md drop-shadow-2xl">
-          <div className="w-3/6 phone:w-full rounded-lg border border-maroon100 py-24 px-24 phone:px-4 ">
+          <div className="w-3/6 phone:w-full rounded-lg bg-backgroundCream100 border border-maroon100 py-24 px-24 phone:px-4 ">
             <form onSubmit={() => {}}>
               <div className="w-full space-y-6 text-sm text-maroon100">
                 <div className="w-full">
@@ -84,7 +84,7 @@ function SignIn(): JSX.Element {
                 <div className="w-full">
                   <input
                     className="w-full p-3 outline-none border rounded-lg border-maroon100"
-                    placeholder="Last Name"
+                    placeholder="Password"
                     type="password"
                     onChange={(e) => {
                       setPassword(e.target.value);

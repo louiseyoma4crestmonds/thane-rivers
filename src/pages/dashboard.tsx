@@ -267,10 +267,10 @@ function Dashboard(): JSX.Element {
                               setUploadPurpose("Promo Code");
                               getPromoCode(promoCode, token).then(
                                 (response: any) => {
-                                  if (response.data.code === 404) {
+                                  if (response?.data?.code === 404) {
                                     setInvalidCode(true);
                                   }
-                                  if (response.data.code === 200) {
+                                  if (response?.data?.code === 200) {
                                     setPromoCode(response.data.data[0]);
                                     setShowPromoCodeModal(true);
                                   }

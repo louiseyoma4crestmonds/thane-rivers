@@ -94,7 +94,7 @@ function Home(): JSX.Element {
                     className="w-full flex place-content-center"
                   >
                     <div className="self-center w-3/6 text-center uppercase border border-2 cursor-pointer border-maroon100 p-4 bg-backgroundCream hover:bg-maroon100 text-maroon100 hover:text-backgroundCream">
-                      Join Club
+                      Get Started
                     </div>
                   </div>
                 </SlideInUpDiv>
@@ -129,7 +129,7 @@ function Home(): JSX.Element {
                     className="w-full flex place-content-center"
                   >
                     <div className="self-center w-3/6 text-center uppercase border border-2 cursor-pointer border-maroon100 p-4 bg-backgroundCream hover:bg-maroon100 text-maroon100 hover:text-backgroundCream">
-                      Join Club
+                      Get Started
                     </div>
                   </div>
                 </SlideInUpDiv>
@@ -138,12 +138,12 @@ function Home(): JSX.Element {
           </div>
         </div>
 
-        <div className="w-full h-auto bg-backgroundCream py-8">
-          <div className="space-y-8 px-8 ">
+        <div className="w-full h-auto bg-backgroundCream py-8 phone:py-2">
+          <div className="space-y-8 px-8 phone:px-4">
             {celebrities.map((celebrity: any) => (
-              <div className="text-maroon100 space-y-6 w-full flex flex-row gap-x-8 phone:flex-col  ">
+              <div className="shadow-md border border-maroon100 rounded  text-maroon100 space-y-6 w-full flex flex-row gap-x-8 phone:flex-col px-12 phone:px-4 py-8">
                 <div
-                  className="tablet:hidden laptop:hidden desktop:hidden plasma:hidden "
+                  className="tablet:hidden laptop:hidden desktop:hidden plasma:hidden rounded-lg"
                   style={{
                     backgroundImage: `url(${celebrity.photo})`,
                     backgroundRepeat: "no-repeat",
@@ -152,12 +152,17 @@ function Home(): JSX.Element {
                     height: "300px",
                   }}
                 />
-                <div className="phone:hidden w-4/6 h-[300px]">
+                <div className="phone:hidden w-4/6 h-[300px] rounded">
                   <ZoomInDiv>
-                    <Image src={celebrity.photo} height={300} width={300} />
+                    <Image
+                      className="rounded-lg"
+                      src={celebrity.photo}
+                      height={300}
+                      width={300}
+                    />
                   </ZoomInDiv>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-4 border border-maroon100 p-8 phone:p-4 rounded shadow-lg">
                   <div className="">
                     <div className="uppercase text-2xl font-bold">
                       {celebrity.name}
@@ -180,7 +185,7 @@ function Home(): JSX.Element {
                       });
                     }}
                   >
-                    <div className="w-full flex gap-x-2 hover:bg-maroon100 hover:text-backgroundCream border border-maroon100 text-center p-4">
+                    <div className="rounded w-full flex gap-x-2 hover:bg-maroon100 hover:text-backgroundCream border border-maroon100 text-center p-4">
                       <div className="w-full font-bold">
                         VIEW CELEBRITY
                         <span className=" text-xl">{"  >"}</span>
@@ -200,41 +205,43 @@ function Home(): JSX.Element {
                   ")",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                backgroundPositionX: "",
-                height: "600px",
+                backgroundPositionX: "center",
+                height: "450px",
               }}
             />
           </div>
           <div className="py-16 phone:py-8 px-6 text-maroon100 phone:space-y-8 grid grid-cols-2 phone:grid-cols-1 gap-x-24 gap-y-24 phone:gap-y-2">
-            <div className="flex gap-x-2">
+            <div className="flex gap-x-2 shadow-lg rounded-lg p-4 ">
               <div className="w-1/6">
                 <Image src={wallet} height={150} width={150} alt="discount" />
               </div>
-              <div>
-                <div className="uppercase text-lg font-bold">
+              <div className="space-y-1">
+                <div className="uppercase text-md phone:text-sm font-bold">
                   Discount Prices
                 </div>
-                <div className="text-md text-justify">
+                <div className="text-sm phone:text-xs ">
                   Gain early access to tickets and exclusive meet-and-greet
                   opportunities!
                 </div>
               </div>
             </div>
-            <div className="flex gap-x-2">
+            <div className="flex gap-x-2 shadow-lg rounded-lg p-4">
               <div className="w-2/6">
                 <Image src={trophy} height={150} width={150} alt="discount" />
               </div>
-              <div>
-                <div className="uppercase text-md font-bold">Award Winning</div>
-                <div className="text-md text-justify">
+              <div className="space-y-1">
+                <div className="uppercase text-md phone:text-sm font-bold">
+                  Award Winning
+                </div>
+                <div className="text-sm phone:text-xs">
                   Enjoy exclusive motivational content and playlists curated by
                   Thane Rivers! We are excited to have you join the journey to
                   stay inspired and empowered!
                 </div>
               </div>
             </div>
-            <div className="flex gap-x-2">
-              <div className="w-2/6">
+            <div className="flex gap-x-2 shadow-lg rounded-lg p-4">
+              <div className="w-1/6">
                 <Image
                   src={bubbleChat}
                   height={150}
@@ -242,25 +249,25 @@ function Home(): JSX.Element {
                   alt="discount"
                 />
               </div>
-              <div>
-                <div className="uppercase text-md font-bold">
+              <div className="space-y-1">
+                <div className="uppercase text-md phone:text-sm font-bold">
                   Special Propositions
                 </div>
-                <div className="text-md text-justify">
-                  Get exclusive access to Thane Rivers latest motivational
-                  content! Be the first to watch new videos and get inspiring
-                  messages before they are released to the public. Stay
-                  motivated and connected with Thane like never before!
+                <div className="text-sm phone:text-xs">
+                  Be the first to watch new videos and get inspiring messages
+                  before they are released to the public.
                 </div>
               </div>
             </div>
-            <div className="flex gap-x-2">
-              <div className="w-2/6">
+            <div className="flex gap-x-2 shadow-lg rounded-lg p-4">
+              <div className="w-1/6">
                 <Image src={email} height={150} width={150} alt="discount" />
               </div>
-              <div className="">
-                <div className="uppercase text-md font-bold">24/7 Support</div>
-                <div className="text-md text-justify">
+              <div className="space-y-1">
+                <div className="uppercase text-md phone:text-sm font-bold">
+                  24/7 Support
+                </div>
+                <div className="text-sm phone:text-xs">
                   We are here to support you whenever you need us. Our dedicated
                   team is available around the clock to assist you.
                 </div>
@@ -269,7 +276,9 @@ function Home(): JSX.Element {
           </div>
         </div>
 
-        <ContactForm />
+        <div className="px-32 phone:px-4 pb-16 shadow-lg">
+          <ContactForm />
+        </div>
       </div>
       <Footer />
     </div>

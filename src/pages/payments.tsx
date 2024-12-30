@@ -54,7 +54,7 @@ function Payments(): JSX.Element {
         </div>
         {/* END OF UTILITY BAR */}
 
-        <div className="w-full text-white text-2xl bg-maroon100 text-center py-4 uppercase">
+        <div className="w-full text-white text-lg bg-maroon100 text-center py-4 uppercase">
           Payment Methods
         </div>
         <div className="">

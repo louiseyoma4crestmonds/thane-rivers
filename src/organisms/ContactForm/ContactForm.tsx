@@ -29,7 +29,7 @@ function ContactForm(): JSX.Element {
   };
 
   return (
-    <div className="w-full flex flex-col place-content-center text-center text-maroon100 bg-white rounded-lg py-8 px-4 space-y-4 tablet:p-24">
+    <div className="shadow-lg w-full flex flex-col place-content-center text-center text-maroon100 bg-white rounded-lg py-8 px-4 space-y-4 tablet:p-24">
       <div>QUICK ENQUIRY</div>
       <div>
         <div>
